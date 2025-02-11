@@ -83,10 +83,24 @@ ol {
 
 .title {
   margin-bottom: 26px;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70.5px;
+  font-family: Oswald;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__list-item{
   margin-bottom: 30px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .content__video-card {
@@ -94,10 +108,44 @@ ol {
   align-items: start;
 }
 
+.content__video-card-title {
+  font-family: Oswald;  
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+}
+
 .search-form {
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+  margin-top: 20px;
 }
 
 .content__video-card-thumbnail {
@@ -110,6 +158,11 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+}
+
+.more-button {
+  width: 390px;
+  height: 34px;
 }
 
 /* Кастомный скроллбар */
