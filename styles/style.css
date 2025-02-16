@@ -145,6 +145,15 @@ ol {
   width: fit-content;
 }
 
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
 .search-form__textfield {
   appearance: none;
   min-width: 239px; /* плейсхолдер почему-то не влезает в форму */
