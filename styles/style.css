@@ -203,6 +203,23 @@ ol {
   border: 1px solid #FFFFFF;
 }
 
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFFFFF;
+  outline-offset: 1px;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
 .search-form__submit-button {
   width: 194px;
   height: 34px;
