@@ -158,7 +158,7 @@ ol {
 
 .search-form__textfield {
   appearance: none;
-  min-width: 239px; /* плейсхолдер почему-то не влезает в форму */
+  min-width: 239px;
   font-size: 18px;
   font-weight: 400;
   background-color: transparent;
@@ -166,7 +166,7 @@ ol {
   border-right: none;
   border-bottom: 1px solid #FFFFFF;
   border-left: none;
-  padding-left: 0px; /* без этого паддинга почему-то плейсхолдер смещен направо */
+  padding-left: 0px;
 }
 
 .search-form__checkbox-list {
