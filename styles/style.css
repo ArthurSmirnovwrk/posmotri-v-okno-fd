@@ -13,7 +13,6 @@ html {
   margin: auto;
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
@@ -53,7 +52,7 @@ ol {
   width: 1140px;
   display: flex;
   align-items: end;
-  column-gap: 30px;  
+  column-gap: 30px;
   margin: auto;
 }
 
@@ -93,14 +92,9 @@ ol {
   color: #545050;
 }
 
-.content__list-item{
+.content__list-item {
   margin-bottom: 30px;
   padding: 0px 3px 0px 3px;
-}
-
-.content__card-link {
-  text-decoration: none;
-  color: #FFFFFF;
 }
 
 .content__video-card {
@@ -109,7 +103,7 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: Oswald;  
+  font-family: Oswald;
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
@@ -178,7 +172,7 @@ ol {
   position: relative;
   width: 19px;
   height: 19px;
-  border: 1px solid #FFFFFF;  
+  border: 1px solid #FFFFFF;
   margin-right: 5px;
 }
 
@@ -186,9 +180,9 @@ ol {
   content: '';
   background-color: #FFFFFF;
   width: 17px;
-  height: 17px;  
-  opacity: 0;  
-  position: absolute;  
+  height: 17px;
+  opacity: 0;
+  position: absolute;
   border: 1px solid #000000;
 }
 
@@ -231,6 +225,8 @@ ol {
 
 .content__card-link {
   display: block;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .content__card-link:hover {
