@@ -57,7 +57,8 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
+  position: relative;
+  inline-size: 711px;
   height: 386px;
   margin-bottom: 16px;
 }
@@ -69,6 +70,7 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   height: 298px;
   overflow-y: auto;
 }
@@ -82,7 +84,7 @@ ol {
   font-size: 75px;
   font-weight: 700;
   line-height: 70.5px;
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -90,9 +92,12 @@ ol {
   color: #545050;
 }
 
-.content__list-item {
-  margin-bottom: 30px;
+.content__list {  
   padding: 0px 3px 0px 3px;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .content__video-card {
@@ -100,14 +105,20 @@ ol {
   align-items: start;
 }
 
+.content__video-card-description-container {
+  flex-grow: 1;
+  width: 196px;
+}
+
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
+  line-height: 100%;
   text-transform: uppercase;
   text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
@@ -122,6 +133,7 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: start;
+  height: 54px;
 }
 
 .search-form__fieldset {
@@ -138,6 +150,7 @@ ol {
   display: flex;
   width: fit-content;
   cursor: pointer;
+  align-items: center;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -151,15 +164,17 @@ ol {
 
 .search-form__textfield {
   appearance: none;
-  min-width: 239px;
+  min-width: 225px;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  line-height: 21.6px;
+  color: #FFFFFF;
   background-color: transparent;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid currentColor;
   border-right: none;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid currentColor;
   border-left: none;
-  padding-left: 0px;
 }
 
 .search-form__checkbox-list {
@@ -195,7 +210,7 @@ ol {
   line-height: 21.6px;
   background-color: transparent;
   color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  border: 1px solid currentColor;
 }
 
 .button:hover {
@@ -225,10 +240,12 @@ ol {
 .more-button {
   width: 390px;
   height: 34px;
+  margin-top: 30px;
 }
 
 /* Тут стили для карточек */
-.content__card-link {
+.content__card-link {  
+  display: block;
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -260,10 +277,6 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
-}
-
-.content__video-card-description-container {
-  flex-grow: 1;
 }
 
 /* Кастомный скроллбар */
