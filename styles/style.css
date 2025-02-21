@@ -92,7 +92,7 @@ ol {
   color: #545050;
 }
 
-.content__list {  
+.content__list {
   padding: 0px 3px 0px 3px;
 }
 
@@ -168,7 +168,6 @@ ol {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 21.6px;
   color: #FFFFFF;
   background-color: transparent;
   border-top: 1px solid currentColor;
@@ -205,6 +204,7 @@ ol {
 
 /* Тут стили для кнопок */
 .button {
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.6px;
@@ -240,11 +240,11 @@ ol {
 .more-button {
   width: 390px;
   height: 34px;
-  margin-top: 30px;
+  margin: 30px 0px 3px 3px;
 }
 
 /* Тут стили для карточек */
-.content__card-link {  
+.content__card-link {
   display: block;
   text-decoration: none;
   color: #FFFFFF;
